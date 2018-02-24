@@ -10,6 +10,8 @@ require('dotenv').config();
 
 console.info('NODE_ENV: ', process.env.NODE_ENV);
 
+console.log(`Got the value of ENV_VAR1: ${process.env. ENV_VAR1} from Process [pid = ${process.pid}]`);
+
 var app = require('../app');
 var debug = require('debug')('demo:server');
 var http = require('http');
